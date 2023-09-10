@@ -7,11 +7,15 @@ import (
 )
 
 func main() {
-	welcome := "Welcome to User Input"
+	welcome := "Welcome to our application"
 	fmt.Println(welcome)
+
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Println("Enter Rating for Pizza : ")
+	fmt.Println("Please rate our pizza : ")
+
 	input, _ := reader.ReadString('\n')
 	fmt.Println("Thanks for rating : ", input)
-	fmt.Printf("Type of this rating is %T ", input)
+
+	fmt.Printf("Type of string is %T", input)
+
 }
